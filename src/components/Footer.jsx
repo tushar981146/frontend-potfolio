@@ -9,7 +9,7 @@ function Footer() {
             <p className='text-xl mb-10 text-white font-preahvihear'>I am currently looking for full stack web developer job? let's connect</p>
             <p className='text-xl mb-10 text-white font-preahvihear'>tushar21522@gmail.com</p>
             <div className="flex flex-row  mb-44">
-            <a href="" target='_blank'>
+            <a href="https://www.linkedin.com/in/tushar-readnal-855265367/" target='_blank'>
                 <img className='rounded-full'  src={icom8} alt="" />
             </a>
             <a href="https://github.com/tushar981146" target='_blank'>

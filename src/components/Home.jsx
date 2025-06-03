@@ -48,9 +48,9 @@ function Home() {
 
             <div className="text-white font-preahvihear p-0 text-xl mt-32 flex justify-center items-center flex-col">
 
-                <p className='mb-10 text-sm md:text-xl text-center'>A self-taught UI/UX designer, functioning in the industry for 3+ years now. </p>
-                <p className='mb-10 text-sm md:text-xl text-center'>I make meaningful and delightful digital products that create an equilibrium</p>
-                <p className='mb-10 text-sm md:text-xl text-center'>between user needs and business goals.</p>
+                <p className='mb-10 text-sm md:text-xl text-center'>A self-taught full-stack developer, learning and building real-world projects with passion. </p>
+                <p className='mb-10 text-sm md:text-xl text-center'> I craft responsive and dynamic web applications that not only look great</p>
+                <p className='mb-10 text-sm md:text-xl text-center'>but also solve real problems by balancing user experience with performance.</p>
 
 
                 <div className="w-full mt-32 p-0">
@@ -78,7 +78,7 @@ function Home() {
 
                 </div>
 
-                <a href={resuma} target={'_blank'} className='text-white font-preahvihear bg-fuchsia-700 w-48 cursor-pointer text-xl mt-32 flex pt-2 pb-2 pr-4 pl-4 rounded-xl justify-center items-center select-auto'>
+                <a href={resuma} target={'_blank'} className='text-white font-preahvihear bg-fuchsia-700 w-48 cursor-pointer text-xl mt-32 flex pt-2 pb-2 pr-4 pl-4 rounded-xl justify-center items-center select-all'>
                     Download C.V
                 </a>
 
