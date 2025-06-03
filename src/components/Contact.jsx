@@ -21,7 +21,7 @@ function Contact() {
         
 
         try {
-            const res = await fetch('http://localhost:3000/form', {
+            const res = await fetch('https://potfolio-backend-je57.onrender.com/form', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
