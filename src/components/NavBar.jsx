@@ -46,9 +46,9 @@ function NavBar() {
 
                 {isOpen && (
                 <div className="absolute top-[8vh] left-0 w-full bg-background text-white flex flex-col space-y-4 py-4 text-center md:hidden z-50">
-                    <NavLink to="/" className="z-50 bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2"onClick={() => handleNavClick('/', <HomeLogo />)}>Home</NavLink>
-                    <NavLink to="/contect" className=" bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2" onClick={() => handleNavClick('/contect', <ContactLogo />)}>Contact</NavLink>
-                    <NavLink to="/lab" className="bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2" onClick={() => handleNavClick('/lab', <HomeLogo />)}>Project</NavLink>
+                    <NavLink to={"/" } className="z-50 bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2"onClick={() => handleNavClick('/', <HomeLogo />)}>Home</NavLink>
+                    <NavLink to={"/contect"} className=" bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2" onClick={() => handleNavClick('/contect', <ContactLogo />)}>Contact</NavLink>
+                    <NavLink to={"/lab"} className="bg-red-600 text-lg font-semibold cursor-pointer hover:bg-purple-700 py-2" onClick={() => handleNavClick('/lab', <HomeLogo />)}>Project</NavLink>
                 </div>
             )}
             </nav>
