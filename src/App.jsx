@@ -4,12 +4,12 @@ import NavBar from "./components/NavBar"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { Outlet } from "react-router-dom"
-
+import { Toaster } from 'react-hot-toast'
 
 
 function App() {
 
-  
+
 
 
 
@@ -24,6 +24,10 @@ function App() {
       </div>
       {/* <Contact /> */}
       <Footer />
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
     </div>
   )
 }

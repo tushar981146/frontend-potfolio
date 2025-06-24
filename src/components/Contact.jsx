@@ -2,14 +2,19 @@ import React from 'react'
 import submit from '../assets/submit.png'
 import astorenote from '../assets/astorenote.png'
 import { useState } from 'react';
+import { toast } from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom';
+
 
 function Contact() {
+    const navigator = useNavigate();
 
-    const [firstName, setFirstName] = React.useState('');
-    const [lastName, setLastName] = React.useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [mail, setMail] = React.useState('');
-    const [phoneNumber, setPhoneNumber] = React.useState('');
-    const [discription, setDiscription] = React.useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [discription, setDiscription] = useState('');
+    const[isSetButton, setIsSetButton] = useState(false);
 
     const gradientStyle = {
         background: 'linear-gradient(to right, #FFFFFF 48%, #A604F2 99%)',
@@ -19,6 +24,7 @@ function Contact() {
 
     const handleSubmit = async (e) => {
         
+        setIsSetButton(true);
 
         try {
             const res = await fetch('https://potfolio-backend-je57.onrender.com/form', {
@@ -32,18 +38,21 @@ function Contact() {
                 throw new Error("Network response was not ok");
             }
             const item = await res.json();
+            toast.success('Your message send Successfully')
            
-        alert(item.message || "Data added successfully!");
+        
         } catch (error) {
             console.error("Error while submitting form: ", error);
-            alert("Error while submitting form");
+            toast.error('something wrong')
         } finally {
             setFirstName('');
             setLastName('');
             setMail('');
             setPhoneNumber('');
             setDiscription('');
+            navigator('/')
         }
+        setIsSetButton(false);
     }
 
 
@@ -78,7 +87,7 @@ return (
                     <input name='mail' type="email" required className='required mt-10 w-[100%] text-white rounded-lg border border-white font-semibold bg-gray-500 placeholder:text-white pl-3' placeholder='Email' onChange={(e) => setMail(e.target.value)} />
                     <input name='phoneNumber' type="number" className=' mt-10 w-[100%] text-white rounded-lg border border-white font-semibold bg-gray-500 placeholder:text-white pl-3' placeholder='Phone Number(optional)' onChange={(e) => setPhoneNumber(e.target.value)} />
                     <textarea required name="discription" className=' mt-10 h-20 w-[100%] text-white rounded-lg border border-white font-semibold bg-gray-500 placeholder:text-white pl-3' placeholder='Comment' id="" onChange={(e) => setDiscription(e.target.value)} ></textarea>
-                    <button className='w-[100%] bg-fuchsia-800 text-white rounded-lg border mt-10 h-10 border-white font-semibold  flex justify-center items-center' onClick={handleSubmit}>
+                    <button className='w-[100%] bg-fuchsia-800 text-white rounded-lg border mt-10 h-10 border-white font-semibold  flex justify-center items-center' onClick={handleSubmit} disabled={isSetButton}>
                         Submit
                         <img className='ml-2 object-cover mix-blend-screen' src={submit} alt="submit logo" />
                     </button>

@@ -4,7 +4,7 @@ import icom8 from "../assets/icons8-linkedin.svg"
 
 function Footer() {
     return (
-        <div className='pl-8'>
+        <div className='pl-8 select-none'>
             <h1 className='text-3xl mt-32 mb-10 font-preahvihear text-white'>Contact</h1>
             <p className='text-xl mb-10 text-white font-preahvihear'>I am currently looking for full stack web developer job? let's connect</p>
             <p className='text-xl mb-10 text-white font-preahvihear'>tushar21522@gmail.com</p>
