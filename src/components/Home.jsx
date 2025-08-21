@@ -78,7 +78,7 @@ function Home() {
 
                 </div>
 
-                <a href='https://drive.google.com/file/d/1g704HV1i05wx5ervOwNTgEMdJJr45-lT/view?usp=sharing' 
+                <a href='https://drive.google.com/file/d/1-Ar8hf6L5jbzTq8HYhrBALucHoDAV1H_/view?usp=sharing' 
                 target={'_blank'} 
                 className='text-white font-preahvihear bg-fuchsia-700 w-48 cursor-pointer text-xl mt-32 flex pt-2 pb-2 pr-4 pl-4 rounded-xl justify-center items-center select-text z-50'>
                     Download C.V
