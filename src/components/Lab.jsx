@@ -33,6 +33,13 @@ function Lab() {
             src: "https://drummachinetushar.netlify.app/",
             title: "Drum Machine",
             text: `"A drum machine is a simple application that allows users to play different sounds by clicking on buttons or pressing keys."`
+        },
+        {
+            src: "https://expenses-tracker-frontend-l9hu.vercel.app",
+            title: "Expenses tracker",
+            text: `"A full-stack Expense Tracker web application built with React (frontend) and Express/MongoDB (backend). This project allows users to manage their expenses, view reports, and maintain budget lists with authentication and modern UI.
+
+"`
         }
         
     
