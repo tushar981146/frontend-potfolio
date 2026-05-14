@@ -40,7 +40,17 @@ function Lab() {
             text: `"A full-stack Expense Tracker web application built with React (frontend) and Express/MongoDB (backend). This project allows users to manage their expenses, view reports, and maintain budget lists with authentication and modern UI.
 
 "`
-        }
+        },
+        {
+            src: "https://perfume-frontend-nlon.onrender.com",
+            title: "Perfume Shop",
+            text: `"A perfum shop that designed on frontend and backend"`
+        },
+        {
+            src: "https://mern-stack-ai-diet-tracker-backend.onrender.com",
+            title: "Ai diet tracker ",
+            text: `"full stack diet tracker that track diet and register on backend"`
+        },
         
     
         
