@@ -78,7 +78,7 @@ function Home() {
 
                 </div>
 
-                <a href={import.meta.env.pdf_link}
+                <a href={import.meta.env.VITE_PDF_LINK}
                 target={'_blank'} 
                 className='text-white font-preahvihear bg-fuchsia-700 w-48 cursor-pointer text-xl mt-32 flex pt-2 pb-2 pr-4 pl-4 rounded-xl justify-center items-center select-text z-50'>
                     Download C.V
