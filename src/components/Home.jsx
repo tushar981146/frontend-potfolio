@@ -13,7 +13,7 @@ function Home() {
     return (
 
 
-        <div className="w-full select-none h-[100%]">
+        <div className="w-full h-[100%]">
 
 
             <div className=" relative flex  flex-row md:justify-center">
